@@ -10,11 +10,11 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #00cc99;
 }
 a:hover {
     text-decoration: underline;
