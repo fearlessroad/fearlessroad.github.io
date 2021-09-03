@@ -1,5 +1,5 @@
 body {
-    margin: 60px auto;
+    margin: 40px auto;
     width: 70%;
 }
 nav ul, footer ul {
@@ -20,12 +20,12 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     font-family:'broadsheet';
 }
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
+    font-size: 1.7em;
+    line-height: 1.8em;
     color: #333;
 }
 footer {
@@ -35,7 +35,7 @@ footer {
 
 ul.posts { 
     margin: 20px auto 40px; 
-    font-size: 1.7em;
+    font-size: 2.0em;
 }
 
 ul.posts li {
