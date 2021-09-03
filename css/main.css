@@ -41,3 +41,10 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+@font-face {
+    font-family: broadsheet;
+    src: url("../../fearlessroad.github.io/css/Font.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
