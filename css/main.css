@@ -3,7 +3,7 @@ body {
     width: 70%;
 }
 nav ul, footer ul {
-    font-family:'broadsheet';
+    font-family:'Lucida Sans';
     padding: 0px;
     list-style: none;
     font-weight: regular;
@@ -21,7 +21,7 @@ a:hover {
 }
 h1 {
     font-size: 3.5em;
-    font-family:'broadsheet';
+    font-family:'Lucida Sans';
 }
 p {
     font-size: 1.7em;
@@ -43,8 +43,8 @@ ul.posts li {
 }
 
 @font-face {
-    font-family: broadsheet;
-    src: url("../../fearlessroad.github.io/css/Broadsheet Regular.ttf") format('truetype');
+    font-family: Lucida Sans;
+    src: url("../../fearlessroad.github.io/fonts/Lucida Sans Regular.ttf") format('truetype');
     font-weight: regular;
     font-style: normal;
 }
