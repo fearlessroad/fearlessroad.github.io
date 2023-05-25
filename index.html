@@ -26,25 +26,26 @@
 <html>
 <head>
   <title>My Personal Website</title>
-  <link rel="stylesheet" type="text/css" href="/css/main.css">
-  <style>
-    body {
-      font-family: Lucida Sans, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!--<style>
     .container {
       display: flex;
       max-width: 960px;
       margin: 0 auto;
     }
     .sidebar {
-      flex-basis: 25%;
+      flex-basis: 30%;
       background-color: #f2f2f2;
       padding: 20px;
+      font-size:1em;
+      font-family:'Lucida Sans';
+      position:sticky;
+      top:0;
+      left:0;
     }
     .content {
-      flex-basis: 75%;
+      flex-basis:100%;
       background-color: #ffffff;
       padding: 20px;
     }
@@ -54,23 +55,26 @@
       border-radius: 50%;
       margin-bottom: 10px;
     }
-  </style>
+  </style>-->
 </head>
 <body>
   <div class="container">
     <div class="sidebar">
-      <img class="headshot" src="/assets/hs1.png" alt="Headshot">
+      <img class="headshot" src="assets/hs1.png" alt="Headshot">
       <h2>Abigail Dommer, PhD</h2>
       <p>Computational Chemist</p>
-      <p>University of California, San Diego</p>
-      <p>Email: acdommer@gmail.com</p>
+      <p>UC San Diego</p>
+      <p>acdommer@gmail.com</p>
+      <canvas id='sars'>
+      <script type="text/javascript" src="js/scroll.js"></script></canvas>
     </div>
     <div class="content">
-      <h1>Welcome to My Personal Website</h1>
-      <p>This is the main content of my website.</p>
+      <h1>Pushing the limits of molecular modeling</h1>
+      <h2>But also making art, whispering to cats, and reading all the books.</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in hendrerit felis. Donec ullamcorper justo odio, a mollis libero feugiat et. Mauris vel justo vitae arcu volutpat tincidunt. Morbi sit amet hendrerit lorem. Fusce bibendum diam in lectus lacinia rutrum. Curabitur sollicitudin orci eget ultrices fermentum.</p>
     </div>
   </div>
 </body>
+
 </html>
 
