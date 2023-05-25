@@ -53,23 +53,24 @@ h1 {
     font-size: 2em;
     font-family:'Lucida Sans';
     line-height:1em;
-    margin-bottom:0;
+    margin-bottom:0.5;
 }
 h2{
     font-size:1.2em;
     font-family:'Lucida Sans';
     line-height:1em;
     margin-top:0.1;
-    margin-bottom:0.1;
+    margin-bottom:0em;
 }
 p {
     font-family:'Lucida Sans';
     font-size: 1em;
     line-height: 1.1em;
     color: #333;
-    padding:0.2em;
+    padding:0em;
     margin-bottom:0em;
     margin-top:0em;
+    margin-left:0em;
 }
 footer {
     border-top: 1px solid #d5d5d5;
