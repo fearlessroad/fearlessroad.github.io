@@ -76,7 +76,7 @@ body {
     .news-headline{
         justify-content:center;
         width:100%;
-        background-color: #f1e1fc;
+        /*background-color: #f1e1fc;*/
         text-align:center;
     }
     .news-box{
@@ -128,8 +128,9 @@ h2{
 h3{
     font-size:1.2em;
     font-family:'Lucida Sans';
-    line-height:2em;
-    margin:0.1;
+    line-height:1em;
+    margin-top:12px;
+    margin-bottom:5px;
 }
 p {
     font-family:'Lucida Sans';
