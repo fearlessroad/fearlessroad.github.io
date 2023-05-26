@@ -193,5 +193,5 @@ ul.posts li {
     font-family: "Lucida Sans Bold";
     src: url("../fonts/LSANSD.ttf") format('truetype');
     font-weight: regular;
-    font-style: italic;
+    font-style: bold;
 }
