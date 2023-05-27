@@ -70,6 +70,14 @@ body {
         margin:5;
         background-color: #ffffff;
     }
+    .column-wide{
+        float:left;
+        width:100%;
+        box-sizing:border-box;
+        padding:5px;
+        margin:5;
+        background-color: #ffffff;
+    }
     .journal {
         max-width:100%;
     }
@@ -154,7 +162,7 @@ em {
 
 b{
   font-family: 'Lucida Sans Bold', Arial, sans-serif;
-  font-style: italic;
+  font-style: regular;
   font-size:1em;
   line-height:1.1em;
   color:#333;
@@ -192,6 +200,6 @@ ul.posts li {
 @font-face {
     font-family: "Lucida Sans Bold";
     src: url("../fonts/LSANSD.ttf") format('truetype');
-    font-weight: regular;
-    font-style: bold;
+    font-weight: bold;
+    font-style: normal;
 }
