@@ -18,7 +18,7 @@ body {
       padding: 20px;
       font-size:1em;
       font-family:'Lucida Sans';
-      position:sticky;
+      /*position:sticky;*/
       top:0;
       left:0;
     }
