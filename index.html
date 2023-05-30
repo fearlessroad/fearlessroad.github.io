@@ -1,107 +1,62 @@
-<!--<!DOCTYPE html>
-<html>
-   <head>
-      <title>Abby Dommer, lipid whisperer</title>   
-      <link rel="stylesheet" type="text/css" href="/css/main.css">
-   </head>
-   <body>
-        <nav>
-           <ul>
-              <li><a href="/">Home<a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/cv">Vitae</a></li>
-              <li><a href="/publications">Publications</a></li>
-              <li><a href="/training">Training</a></li>
-           </ul>
-        </nav>
-        <div class="container">
-           <div class="blurb">
-              <h1> Abigail C. Dommer</h1>
-                 
-   </body>
-</html>-->
-
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Abigail Dommer, PhD</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!--<style>
-    .container {
-      display: flex;
-      max-width: 960px;
-      margin: 0 auto;
-    }
-    .sidebar {
-      flex-basis: 30%;
-      background-color: #f2f2f2;
-      padding: 20px;
-      font-size:1em;
-      font-family:'Lucida Sans';
-      position:sticky;
-      top:0;
-      left:0;
-    }
-    .content {
-      flex-basis:100%;
-      background-color: #ffffff;
-      padding: 20px;
-    }
-    .headshot {
-      max-width: 100%;
-      height: auto;
-      border-radius: 50%;
-      margin-bottom: 10px;
-    }
-  </style>-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="test.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-  <div class="container">
-    <div class="sidebar">
-      <img class="headshot" src="assets/hs1.png" alt="Headshot">
-      <h2>Abigail Dommer, PhD</h2>
-      <p>Computational Chemist</p>
-      <p>UC San Diego</p>
-      <p>acdommer@gmail.com</p>
-      <canvas id='sars'>
-      <script type="text/javascript" src="js/scroll.js"></script></canvas>
+
+    <div class="topnav" id="myTopnav">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#artwork">Artwork</a>
+          <a href="#resume">Resume</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
     </div>
-    <div class="content">
-        <nav class='navbar'>
-          <ul>
-            <li><a href='index.html'>HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="#">RESEARCH</a></li>
-            <li><a href="#">PUBLICATIONS</a></li>
-            <li><a href="#">ARTWORK</a></li>
-            <li><a href="#">RESUME</a></li>
-          </ul>
-      </nav>
-      <h1>Pushing the limits of molecular modeling while making art, whispering to cats, and reading all the books.</h1>
-      <!--<h2 class="special-h2">While making art, whispering to cats, and reading all the books.</h2>-->
-      <p>Thanks for visiting! Please enjoy poking around, but also note that this site is still under construction and some links may be broken.</p>
-        <div class="news-box">
-          <div class='news-post'>
-            <div class='news-headline'><h3>May 4, 2023</h3></div>
-              <div class="column-left-1-2"><img class='journal' src="assets/acs_cent_SCI.png"></div>
-              <div class="column-right-2-2"><p>See our recent <a href="https://pubs.acs.org/doi/full/10.1021/acscentsci.3c00184">publication</a> in <em>ACS Central Science</em> entitled <b>Revealing the Impacts of Chemical Complexity on Submicrometer Sea Spray Aerosol Morphology</b>. Here we utilize large-scale all-atom molecular dynamics to simulate organic sea spray aerosols!</p>
-              <br><p>I'm also happy to report that my artwork was selected for the cover of this journal issue!</p> 
-              <br><p><a href='#' download>Download PDF</a></p>
-              <p><a href='#' download>Download Cover</a></p>
-            </div>
+
+    <div style="padding-left:16px" class='container'>
+          <div class='sidebar'>
+                <div class='sidebar-text'>
+                      <img class="headshot" src="assets/hs1.png" alt='Headshot'>
+                </div>
+                <div class='sidebar-text'>
+                    <h2><b>Abigail Dommer, PhD</b></h2>
+                    <h3>Computational Chemist<br>Postdoctoral Scholar<br>Laboratory of Dr. Rommie Amaro<br>UC San Diego<br>acdommer@gmail.com</h3>
+                </div>
+                <div>
+                    <canvas id='sars'>
+                          <script type="text/javascript" src="js/scroll.js"></script>
+                    </canvas>
+                </div>
           </div>
-          <div class='news=post'>
-            <div class='news-headline'><h3>July 15, 2022</h3></div>
-            <div class="column-wide"><p>I was named to the 2022 Talented 12 Cohort by ACS <em>Chemical & Engineering News</em> Magazine for early career chemists changing the world with their research. See the full article <a href='https://cen.acs.org/physical-chemistry/computational-chemistry/Abigail-Dommer/100/i25'>here</a>.</p></div>
-            <div><a href='https://cen.acs.org/physical-chemistry/computational-chemistry/Abigail-Dommer/100/i25'><img class='journal' src='assets/CEN_T12.png'></a></div>
-          </div>
-        </div>
-      </div>
+          <div class='content'>
+                <h1>Pushing the limits of molecular modeling while making art, whispering to cats, and reading all the books</h1>
+                <p>Thanks for visiting! Please enjoy poking around, but also note that this site is still under construction and some links may be broken.<br><br>
+                <p><em>Latest News</em></p><hr>
+                    <img class='journal' src="assets/acs_cent_SCI.png">
+                    <h2><p>May 4, 2023: New publication simulating sea spray aerosols!</h2><br>See the full <a href="https://pubs.acs.org/doi/full/10.1021/acscentsci.3c00184">manuscript</a> in <em>ACS Central Science</em> entitled Revealing the Impacts of Chemical Complexity on Submicrometer Sea Spray Aerosol Morphology. Here we utilize large-scale all-atom molecular dynamics to simulate organic sea spray aerosols! I'm also happy to report that my artwork was selected for the cover of this journal issue!</p><br><br><hr>
+
+
+
+          </div>  
     </div>
-  </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 </body>
-
 </html>
-
