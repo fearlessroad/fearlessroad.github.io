@@ -28,13 +28,6 @@ body {
   font-size:1em;
   font-family:'Lucida Sans';
 }
-.news-header{
-  text-align: center;
-  margin-bottom:10px;
-}
-.news-box{
-  margin:10px;
-}
 h3{
     font-size:0.9em;
     font-family:'Lucida Sans';
@@ -143,11 +136,6 @@ canvas{
   }
 }
 
-a{
-  color:#880ed4;
-  text-decoration: none;
-}
-
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
@@ -163,20 +151,20 @@ a{
 }
 @font-face {
     font-family: "Lucida Sans";
-    src: url("../fonts/Lucida-Sans.ttf") format('truetype');
+    src: url("fonts/Lucida-Sans.ttf") format('truetype');
     font-weight: regular;
     font-style: normal;
 }
 @font-face {
     font-family: "Lucida Sans Italic";
-    src: url("../fonts/Lucida-Sans-Italic.ttf") format('truetype');
+    src: url("fonts/Lucida-Sans-Italic.ttf") format('truetype');
     font-weight: regular;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Lucida Sans Bold";
-    src: url("../fonts/LSANSD.ttf") format('truetype');
+    src: url("fonts/LSANSD.ttf") format('truetype');
     font-weight: bold;
     font-style: normal;
 }
