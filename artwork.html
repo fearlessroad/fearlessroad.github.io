@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<!-- TOP NAVIGATION AND SIDEBAR-->
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="research.html">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="artwork.html">Artwork</a>
+          <a href="resume.html">Resume</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
+    </div>
+
+    <div style="padding-left:16px" class='container'>
+          <div class='sidebar'>
+                <div class='sidebar-text'>
+                      <img class="headshot" src="assets/hs1.png" alt='Headshot'>
+                </div>
+                <div class='sidebar-text'>
+                    <h2>Abigail Dommer, PhD</h2>
+                    <p>Computational Chemist<br>Postdoctoral Scholar<br>Laboratory of Dr. Rommie Amaro<br>UC San Diego<br>acdommer@gmail.com</p>
+                </div>
+                <div>
+                    <canvas id='sars'>
+                          <script type="text/javascript" src="js/scroll.js"></script>
+                    </canvas>
+                </div>
+          </div>
+<!-- start content here-->
+      <div class='content'>
+          <h1>Artworks</h1>
+          <div class='news-header'><h2>Scientific Journal Covers</h2>
+                <div class='artwork-thumbnail'>
+                      <a href='assets/ACS_Cent_SCI.png'><img class='zoom' src='assets/ACS_Cent_SCI.png'></a>
+                      <a href='assets/JPCL_LPS.jpg'><img class='zoom' src='assets/JPCL_LPS.jpg'></a>
+                      <a href='assets/JPCL_aa.jpg'><img class='zoom' src='assets/JPCL_aa.jpg'></a>
+                      <a href='assets/ChemSci.png'><img class='zoom' src='assets/ChemSci.png'></a>
+                      <a href='assets/langmuir.jpg'><img class='zoom' src='assets/langmuir.jpg'></a>
+                  
+                </div><br style="clear:both">
+
+          </div>
+          <div class='news-header'><h2>Molecular Renders</h2></div>
+          <div class='news-header'><h2>Illustrations</h2></div>
+        
+        
+        
+      </div>
+
+
+
+
+
+<!-- END CONTAINER DIV -->
+</div>
+<!-- SCRIPT FOR SARS -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<!-- FOOTER -->
+<div class='footer'>
+      <ul><h2>
+            <li><a class='footer-text'>Follow:</a></li>
+            <li><a href='#'><img src='assets/instagram.png'>Instagram</a></li>
+            <li><a href='#'><img src='assets/twitter.png'>Twitter</a></li>
+            <li><a href='#'><img src='assets/linkedin.png'>LinkedIn</a></li>
+            <li><a href='#'><img src='assets/github.png'>Github</a></li>
+      </h2></ul>
+      <p>Copyright: Abigail C Dommer 2023</p>
+</div>
+</body>
+</html>
