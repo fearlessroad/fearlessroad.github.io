@@ -95,7 +95,13 @@ p {
   margin-right: 0px;
   margin-top:0;
 }
-
+.toc{
+  float:left;
+  max-width: 20%;
+  height: auto;
+  margin-right: 15px;
+  margin-top:0;
+}
 canvas{
   width:100%;
 }
@@ -119,6 +125,7 @@ canvas{
 .topnav a:hover {
   background-color: #f2f2f2;
   color: black;
+  text-decoration: none;
 }
 
 .topnav a.active {
@@ -129,7 +136,47 @@ canvas{
 .topnav .icon {
   display: none;
 }
+.footer{
+  background-color:#f2f2f2; 
+  padding:20px;
+  padding-bottom:25px;
+  margin:0px;
+}
 
+.footer ul{
+    list-style-type: none;
+    margin:0;
+    padding:10px;
+    overflow:hidden;
+}
+.footer li{
+  float:left;
+}
+
+.footer li a{
+  display:block;
+  text-align: center;
+  padding-left:20px;
+  text-decoration: none;
+  color:#333;
+}
+.footer-text{
+    font-family:'Arial';
+    font-size: 1em;
+    color: #333;
+}
+.footer a.footer-text{
+      color: #333;
+}
+.footer p{
+    margin-left:30px;
+    font-size: 0.85em;
+}
+.footer img{
+    max-width:20px;
+    margin-right:5px;
+    float:left;
+}
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -155,6 +202,9 @@ canvas{
 a{
   color:#880ed4;
   text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {

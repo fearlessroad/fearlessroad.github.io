@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<!-- TOP NAVIGATION AND SIDEBAR-->
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="research.html">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="artwork.html">Artwork</a>
+          <a href="resume.html">Resume</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
+    </div>
+
+    <div style="padding-left:16px" class='container'>
+          <div class='sidebar'>
+                <div class='sidebar-text'>
+                      <img class="headshot" src="assets/hs1.png" alt='Headshot'>
+                </div>
+                <div class='sidebar-text'>
+                    <h2>Abigail Dommer, PhD</h2>
+                    <p>Computational Chemist<br>Postdoctoral Scholar<br>Laboratory of Dr. Rommie Amaro<br>UC San Diego<br>acdommer@gmail.com</p>
+                </div>
+                <div>
+                    <canvas id='sars'>
+                          <script type="text/javascript" src="js/scroll.js"></script>
+                    </canvas>
+                </div>
+          </div>
+<!-- start content here-->
+<div class='content'>
+    <h1>Publications</h1>
+    <p>Journal covers displayed are created by me!</p>
+    <p>†Shared Authorship</p><br>
+    <div class='news-header'><h2>2023</h2><hr></div>
+    <div>
+        <img class='toc' src='assets/acs_cent_SCI.png'>
+        <em>Revealing the Impacts of Chemical Complexity on Submicrometer Sea Spray Aerosol Morphology.</em>
+        <p><b>Dommer, A. C.</b>; Wauer, N. A.; Angle, K. J.; Davasam, A.; Rubio, P. B.; Luo, M.; Morris, C. K.; Prather, K. A.; Grassian, V. H.; Amaro, R. E. <em>ACS Central Science</em>. 2023. DOI: 10.1021/acscentsci.3c00184 </p><br style='clear:both'><br>
+    </div>
+    <div>
+        <img class='toc' src='assets/RAV.png'>
+        <em>#COVIDisAirborne: AI-Enabled Multiscale Computational Microscopy of Delta SARS-CoV-2 in a Respiratory Aerosol.</em>
+        <p><b>Dommer, A.</b>, † Casalino, L.,† and Kearns, F. †; Rosenfeld, M.; Wauer, N.; Ahn, S-H.; Russo, J.; Oliveira, S.; Morris, C.; Bogetti, A.; Trifan, A.;  Brace, A.; Sztain, T.; Clyde, A.; Ma, H.; Chennubhotla, C.; Lee, H.; Turilli, M.; Khalid, S.; Tamayo-Mendoza, T.; Welborn, M.; Christensen, A.; Smith, D.; Qiao, Z.; Sirumalla, S.; O’Connor, M.; Manby, F.; Anandkumar, A.; Hardy, D.; Phillips, J.; Stern, A.; Romero, J.; Clark, D.; Dorrell, M.; Maiden, T.; Huang, L.; McCalpin, J.; Woods, C.; Williams, M.; Barker, B.; Rajapaksha, H.; Pitts, R.; Gibbs, T.; Stone, J.; Zuckerman, D.; Mulholland, A.; Miller, T.; Jha, S.; Ramanathan, A.; Chong, L.; Amaro, R. <em>Int. J. High Perform. Comput. Appl.</em> 2023. 37, 1, 28-44. DOI: 10.1177/10943420221128233.</p><br style="clear:both"><br>
+    </div>
+    <div class='news-header'><h2>2022</h2><hr></div>
+        <img class='toc' src='assets/JPCL_aa.jpg'>
+        <em>Amino Acids are Driven to the Interface by Salts and Acidic Environments</em>
+        <p>Angle, K. A.; Nowak, C. M.; Davasam, A.; <b>Dommer, A.C.</b>; Wauer, N. A.; Amaro, R. E.; Grassian, V. H. J. Phys. Chem. Lett. 2022, 13, 12, 2824-2829. DOI: 10.1021/acs.jpclett.2c00321.</p>
+        <br style='clear:both'><br>
+    <div class='news-header'><h2>2021</h2><hr></div>
+    <div class='news-header'><h2>2020</h2><hr></div>
+    <div class='news-header'><h2>2019</h2><hr></div>
+    <div class='news-header'><h2>2018</h2><hr></div>
+    <div class='news-header'><h2>2017</h2><hr></div>
+    <div class='news-header'><h2>2016</h2><hr></div>
+    <div class='news-header'><h2>2015</h2><hr></div>
+</div>
+
+
+
+<!-- END CONTAINER DIV -->
+</div>
+<!-- SCRIPT FOR SARS -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<!-- FOOTER -->
+<div class='footer'>
+      <ul><h2>
+            <li><a class='footer-text'>Follow:</a></li>
+            <li><a href='#'><img src='assets/instagram.png'>Instagram</a></li>
+            <li><a href='#'><img src='assets/twitter.png'>Twitter</a></li>
+            <li><a href='#'><img src='assets/linkedin.png'>LinkedIn</a></li>
+            <li><a href='#'><img src='assets/github.png'>Github</a></li>
+      </h2></ul>
+      <p>Copyright: Abigail C Dommer 2023</p>
+</div>
+</body>
+</html>
