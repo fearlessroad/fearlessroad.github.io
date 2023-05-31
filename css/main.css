@@ -14,7 +14,7 @@ body {
       flex-basis: 25%;
       background-color: #ffffff;
       padding: 20px;
-      font-size:1em;
+      font-size:0.9em;
       font-family:'Arial','Lucida Sans';
       /*position:sticky;*/
       top:0;
@@ -25,7 +25,7 @@ body {
   flex-basis:70%;
   background-color: #ffffff;
   padding: 20px;
-  font-size:1em;
+  font-size:0.9em;
   font-family:'Arial','Lucida Sans';
 }
 .news-header{
@@ -38,7 +38,7 @@ body {
 .sidebar-text{
     font-family:'Arial';
     font-size: 0.9em;
-    line-height: 1.1em;
+    line-height: 1em;
     color: #333;
     padding:0em;
     margin-bottom:0em;
@@ -47,7 +47,7 @@ body {
 }
 
 h2{
-    font-size:1.2em;
+    font-size:1.1em;
     font-family:'Arial','Lucida Sans';
     line-height:1em;
     margin-top:0.1;
@@ -56,16 +56,16 @@ h2{
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.9em;
     font-family:'Arial', 'Lucida Sans';
-    line-height:1em;
+    line-height:0.95em;
     margin-bottom:0.5;
     margin-top:0;
 }
 p {
     font-family:'Arial';
-    font-size: 1em;
-    line-height: 1.1em;
+    font-size: 0.9em;
+    line-height: 1em;
     color: #333;
     padding:0em;
     margin-bottom:0em;
@@ -97,7 +97,7 @@ p {
 }
 .toc{
   float:left;
-  max-width: 20%;
+  max-width: 25%;
   height: auto;
   margin-right: 15px;
   margin-top:0;
@@ -119,7 +119,7 @@ canvas{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .topnav a:hover {
@@ -162,7 +162,7 @@ canvas{
 }
 .footer-text{
     font-family:'Arial';
-    font-size: 1em;
+    font-size: 0.9em;
     color: #333;
 }
 .footer a.footer-text{
@@ -170,7 +170,7 @@ canvas{
 }
 .footer p{
     margin-left:30px;
-    font-size: 0.85em;
+    font-size: 0.8em;
 }
 .footer img{
     max-width:20px;
@@ -200,7 +200,7 @@ canvas{
 }
 
 a{
-  color:#880ed4;
+  color:#C500FF;
   text-decoration: none;
 }
 a:hover{
