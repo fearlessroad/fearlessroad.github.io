@@ -32,6 +32,8 @@ body {
   text-align: center;
   margin-bottom:10px;
 }
+
+
 .news-box{
   margin:10px;
 }
@@ -46,11 +48,12 @@ body {
     margin-left:0em;
 }
 
+
 h2{
     font-size:1.1em;
     font-family:'Arial','Lucida Sans';
     line-height:1em;
-    margin-top:0.1;
+    margin-top:0;
     margin-bottom:0em;
     margin-top:0;
 }
@@ -58,8 +61,8 @@ h2{
 h1 {
     font-size: 1.9em;
     font-family:'Arial', 'Lucida Sans';
-    line-height:0.95em;
-    margin-bottom:0.5;
+    line-height:1em;
+    margin-bottom:0;
     margin-top:0;
 }
 .content h3{
@@ -122,9 +125,38 @@ p {
   margin:0;
   float:left;
 }
-.zoom:hover{
-  /*transform:scale(1.5);*/
+
+.research-box{
+  background-color:#ffffff;
+  width:40%;
+  justify-content: left;
+  float:left;
+  padding:15px;
+  margin-top:15px;
+  margin-right:1em;
+  text-align: center;
+  border:1px solid;
+  height:10%;
+  transition:0.4s;
 }
+.research-box h3{
+    font-weight:bold;
+    font-size: 1.4em;
+}
+.research-box:hover{
+  background-color: #f2f2f2;
+}
+.expertise-key{
+  border:1px solid #aaaaaa;
+  width:auto;
+  padding-top:6px;
+  padding-left:9px;
+  padding-right:9px;
+  padding-bottom:8px;
+  /*margin-bottom:1px;*/
+  display:inline-block;
+}
+
 
 canvas{
   width:100%;
@@ -144,6 +176,7 @@ canvas{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 15px;
+  transition:0.4s;
 }
 
 .topnav a:hover {
@@ -228,11 +261,25 @@ canvas{
     max-width:90%;
 
   }
+  .research-box{
+    width:80%;
+    height:30%;
+  }
 }
+table{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+table td{
+  padding:0;
+}
+
 
 a{
   color:#C500FF;
   text-decoration: none;
+  transition:0.4s;
 }
 a:hover{
   text-decoration: underline;
