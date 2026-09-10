@@ -5,63 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Computational Aerobiology Lab</title>
   <link rel="stylesheet" href="style.css">
-  <!-- FontAwesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://use.typekit.net/xqj8tkh.css">
 </head>
 <body>
 
-  <!-- Navigation Bar 
-  <header class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="logo">
-        <i class="fa-solid fa-microscope logo-icon"></i>
-        <span>CABLab</span>
-      </a>
-
-      <nav class="nav-links">
-        <a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="tutorials.html"><i class="fa-solid fa-graduation-cap"></i> Research</a>
-        <a href="publications.html"><i class="fa-solid fa-newspaper"></i> Publications</a>
-        <a href="#announcements"><i class="fa-solid fa-bullhorn"></i> Announcements</a>
-        <a href="people.html"><i class="fa-solid fa-address-book"></i>People</a>
-        <a href="#contact"><i class="fa-regular fa-image"></i>Gallery</a>
-      </nav>
-
-      <div class="nav-actions">
-        <a href="https://github.com" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-        <button id="search-btn" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-      </div>
-    </div>
-  </header>-->
-
-
   <header class="navbar">
     <div class="nav-container">
       <a href="index.html" class="logo"><i class="fa-solid fa-microscope logo-icon"></i><span>CABLab</span></a>
-      <nav class="nav-links">
-        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      
+      <button class="hamburger-toggle" id="menu-toggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a>
         <a href="publications.html"><i class="fa-solid fa-graduation-cap"></i> Research</a>
-        <a href="publications.html" class="active"><i class="fa-solid fa-newspaper"></i> Publications</a>
-        <a href="index.html"><i class="fa-solid fa-bullhorn"></i> Announcements</a>
+        <a href="publications.html"><i class="fa-solid fa-newspaper"></i> Publications</a>
+        <a href="#announcements"><i class="fa-solid fa-bullhorn"></i> Announcements</a>
         <a href="people.html"><i class="fa-solid fa-address-book"></i> People</a>
-        <a href="index.html"><i class="fa-regular fa-image"></i> Gallery</a>
+        <a href="#gallery"><i class="fa-regular fa-image"></i> Gallery</a>
       </nav>
     </div>
   </header>
 
-
-  <!-- Search Modal -->
-  <div id="search-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-modal">&times;</span>
-      <input type="text" placeholder="Type to search documentation, tools, publications...">
-    </div>
-  </div>
-
-  <!-- Hero Section -->
   <main class="hero">
-    <!-- Glassmorphism Container Card -->
     <div class="glass-card">
       <h1>Computational Aerobiology at Georgetown</h1>
       <div class="divider"></div>
@@ -73,87 +41,82 @@
       </div>
     </div>
 
-    <!-- Scroll Indicator -->
     <div class="scroll-indicator">
       <span>Scroll to explore</span>
       <i class="fa-solid fa-arrow-down"></i>
     </div>
   </main>
-<!-- SECTION 1: LATEST NEWS & UPDATES -->
+
+  <!-- SECTION 1: LATEST NEWS & UPDATES -->
   <section class="section news-section" id="announcements">
     <div class="section-inner">
-        <div class="section-title">
-          <h2>Latest News & Updates</h2>
+      <div class="section-title">
+        <h2>Latest News & Updates</h2>
         <div class="title-underline"></div>
-  </div>
-
-    <div class="news-grid">
-      <!-- News Card 1 -->
-      <div class="news-card">
-        <div class="card-img" style="background-image: url('assets/news/couch2.png');"></div>
-        <div class="card-content">
-          <div class="card-header">
-            <span class="date-badge"><i class="fa-regular fa-calendar"></i> September 2, 2026</span>
-            <span class="latest-badge">Latest</span>
-          </div>
-          <h3>Couch Installed in Abby's Office</h3>
-          <p>It's what we've all been waiting for... Standing invitation to any visitors who want to have a coffee and sit on the new couch in Abby's office.</p>
-          <div class="card-footer">
-            <span class="author">Author: Abby D.</span>
-            <a href="#" class="read-more-btn">Read More &rarr;</a>
-          </div>
-        </div>
       </div>
 
-      <!-- News Card 3 -->
-      <div class="news-card">
-        <div class="card-img" style="background-image: url('assets/news/news2.jpg');"></div>
-        <div class="card-content">
-          <div class="card-header">
-            <span class="date-badge"><i class="fa-regular fa-calendar"></i> August 14, 2026</span>
-          </div>
-          <h3>Enzymes at the Air/Sea Interface</h3>
-          <p>Our latest publication about the dynamics of enzymes at the air/ocean surface and within sea spray aerosols is out in ACS Earth and Space Chemistry</p>
-          <div class="card-footer">
-            <span class="author">Authors: Patiemma, Aakash, and Nick!</span>
-            <a href="https://doi.org/10.1021/acsearthspacechem.6c00108" class="read-more-btn">Read More &rarr;</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- News Card 4 -->
-      <div class="news-card">
-        <div class="card-img" style="background-image: url('assets/news/news1-1.jpg');"></div>
-        <div class="card-content">
-          <div class="card-header">
-            <span class="date-badge"><i class="fa-regular fa-calendar"></i> August 1, 2026</span>
-          </div>
-          <h3>Inauguration of the CAB!</h3>
-          <p>The Computational Aerobiology Laboratory now lives at Georgetown University in Washington, DC! We are located on the 3rd and 4th floors of Regents Hall on the Hilltop Campus. Come Visit Us!</p>
+      <div class="news-grid">
+        <div class="news-card">
+          <div class="card-img" style="background-image: url('assets/news/couch2.png');"></div>
+          <div class="card-content">
+            <div class="card-header">
+              <span class="date-badge"><i class="fa-regular fa-calendar"></i> September 2, 2026</span>
+              <span class="latest-badge">Latest</span>
+            </div>
+            <h3>Couch Installed in Abby's Office</h3>
+            <p>It's what we've all been waiting for... Standing invitation to any visitors who want to have a coffee and sit on the new couch in Abby's office.</p>
             <div class="card-footer">
-            <span class="author">Author: Abby D.</span>
-            <a href="#" class="read-more-btn">Read More &rarr;</a>
+              <span class="author">Author: Abby D.</span>
+              <a href="#" class="read-more-btn">Read More &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="card-img" style="background-image: url('assets/news/news2.jpg');"></div>
+          <div class="card-content">
+            <div class="card-header">
+              <span class="date-badge"><i class="fa-regular fa-calendar"></i> August 14, 2026</span>
+            </div>
+            <h3>Enzymes at the Air/Sea Interface</h3>
+            <p>Our latest publication about the dynamics of enzymes at the air/ocean surface and within sea spray aerosols is out in ACS Earth and Space Chemistry</p>
+            <div class="card-footer">
+              <span class="author">Authors: Patiemma, Aakash, and Nick!</span>
+              <a href="https://doi.org/10.1021/acsearthspacechem.6c00108" class="read-more-btn">Read More &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="card-img" style="background-image: url('assets/news/news1-1.jpg');"></div>
+          <div class="card-content">
+            <div class="card-header">
+              <span class="date-badge"><i class="fa-regular fa-calendar"></i> August 1, 2026</span>
+            </div>
+            <h3>Inauguration of the CAB!</h3>
+            <p>The Computational Aerobiology Laboratory now lives at Georgetown University in Washington, DC! We are located on the 3rd and 4th floors of Regents Hall on the Hilltop Campus. Come Visit Us!</p>
+            <div class="card-footer">
+              <span class="author">Author: Abby D.</span>
+              <a href="#" class="read-more-btn">Read More &rarr;</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="view-all-container">
-      <a href="#" class="view-all-btn">View All Announcements &rarr;</a>
+      <div class="view-all-container">
+        <a href="#" class="view-all-btn">View All Announcements &rarr;</a>
+      </div>
     </div>
-  </div>
   </section>
 
   <!-- SECTION 2: ABOUT THE LAB -->
   <section class="section about-section" id="about">
     <div class="about-glass-container">
-      <!-- Left Column: Lab Bio -->
       <div class="about-text">
         <h2>About the CAB</h2>
         <p>The Computational Aerobiology Lab develops state-of-the-art multiscale models and runs simulations to understand the mechanisms governing bioaerosols and pathogen transport and survival throughout the environment.</p>
       </div>
 
-      <!-- Right Column: Key Publications -->
       <div class="about-publications">
         <h3>Key Publications</h3>
         
@@ -195,26 +158,27 @@
   <!-- SECTION 3: GALLERY -->
   <section class="section gallery-section" id="gallery">
     <div class="section-inner">
-    <div class="section-title">
-      <h2>Lab Gallery</h2>
-      <div class="title-underline"></div>
-    </div>
+      <div class="section-title">
+        <h2>Lab Gallery</h2>
+        <div class="title-underline"></div>
+      </div>
 
-    <div class="gallery-grid">
-      <div class="gallery-item"><img src="assets/covers/LA_cover.jpg" alt="Simulation 1"></div>
-      <div class="gallery-item"><img src="assets/covers/acs_cent_sci_hires.jpeg" alt="Simulation 2"></div>
-      <div class="gallery-item"><img src="assets/covers/JPCL_aa.jpg" alt="Simulation 3"></div>
-      <div class="gallery-item"><img src="assets/covers/JPCL_LPS.jpg" alt="Simulation 4"></div>
-      <div class="gallery-item"><img src="assets/covers/langmuir.jpg" alt="Simulation 5"></div>
-      <div class="gallery-item"><img src="assets/covers/prot_sci_cover.png" alt="Simulation 6"></div>
-    </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="assets/covers/LA_cover.jpg" alt="Simulation 1"></div>
+        <div class="gallery-item"><img src="assets/covers/acs_cent_sci_hires.jpeg" alt="Simulation 2"></div>
+        <div class="gallery-item"><img src="assets/covers/JPCL_aa.jpg" alt="Simulation 3"></div>
+        <div class="gallery-item"><img src="assets/covers/JPCL_LPS.jpg" alt="Simulation 4"></div>
+        <div class="gallery-item"><img src="assets/covers/langmuir.jpg" alt="Simulation 5"></div>
+        <div class="gallery-item"><img src="assets/covers/prot_sci_cover.png" alt="Simulation 6"></div>
+      </div>
 
-    <div class="gallery-dots">
-      <span class="dot active"></span>
-      <span class="dot"></span>
+      <div class="gallery-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+      </div>
     </div>
-  </div>
   </section>
+
   <script src="script.js"></script>
 </body>
 </html>
