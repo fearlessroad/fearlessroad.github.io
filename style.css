@@ -1,0 +1,853 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+	font-family: "helvetica-neue-lt-pro", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+  background-color: #0b132b;
+  margin:0;
+  padding:0;
+  color: #ffffff;
+  overflow-x: hidden;
+
+}
+/* Background image only for accessory pages*/
+body.publications-page,
+body.people-page{
+background-color: #0b132b;
+background: linear-gradient(to bottom,
+  			 rgba(0, 0, 0, 0.75) 0%, 
+  			 rgba(0, 0,0, 0.35) 15%, 
+ 			 rgba(0, 0, 0, 0) 100%),
+              url('assets/cab_crop.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps image fixed while scrolling */
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  background-filter:none;
+  -webkit-backdrop-filter:none;
+  z-index: 1000;
+  box-shadow: none;
+  border:none;
+}
+
+.nav-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.25rem;
+  font-weight: 200;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.logo-icon {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.nav-links a,
+.logo,
+.nav-actions a,
+.nav-actions button,
+.dropdown-btn {
+	color:#ffffff;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+}
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-links a:hover{
+	opacity:0.7;
+	background:transparent;
+	color:#ffffff !important;
+	transition: opacity 0.2s ease-in-out;
+}
+/*.nav-links a.active {
+  background-color: #edf2f7;
+  color: #1a202c;
+}*/
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Nav Actions (Icons on Right) */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-actions a, .nav-actions button {
+  background: none;
+  border: none;
+  color: #4a5568;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-actions a:hover, .nav-actions button:hover {
+  color: #1a202c;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  /* Dark textured microbial background similar to original */
+  background: linear-gradient(to bottom,
+  			 rgba(0, 0, 0, 0.75) 0%, 
+  			 rgba(0, 0,0, 0.35) 15%, 
+ 			 rgba(0, 0, 0, 0) 100%),
+              url('assets/cab_crop.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Frosted Glass Card */
+.glass-card {
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 3rem 3rem;
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.glass-card h1 {
+  font-family: "adobe-caslon-pro", Georgia, serif;
+  font-style: normal;
+  font-size: 3.0rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 0.7rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  animation: gentleBounce 4.5s ease-in-out infinite;
+  display: inline-block;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0.2rem auto 1.5rem auto;
+  border-radius: 2px;
+}
+
+.subtitle {
+  font-family: "helvetica-neue-lt-pro", Helvetica, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.4rem;
+  color: #e2e8f0;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #4c2a58; /* Dark purple matching image */
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #3b2045;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #2d3748;
+}
+
+.btn-secondary:hover {
+  background-color: #f7fafc;
+  transform: translateY(-2px);
+}
+
+/* Scroll Indicator */
+/* Fade animation for the text */
+@keyframes fadeInOut {
+  0%, 20% {
+    opacity: 0.7;
+  }
+  50%, 70% {
+    opacity: 1;
+  }
+  100% {
+  	opacity:0.7;
+  }
+}
+
+/* Bounce animation for the arrow */
+@keyframes arrowBounce {
+  0%, 20% {
+    transform: translateY(4px);
+  }
+  50%,70% {
+    transform: translateY(0);
+  }
+  100% {
+  	transform: translateY(4px);
+  }
+}
+@keyframes gentleBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px); /* Adjust distance as needed */
+  }
+}
+/* Scroll Indicator Container */
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  /* Removed the container-level animation */
+}
+
+/* Text fading effect */
+.scroll-indicator span {
+  animation: fadeInOut 1.5s ease-in-out infinite;
+}
+
+/* Arrow bouncing effect */
+.scroll-indicator i {
+  display: inline-block;
+  animation: arrowBounce 1.5s ease-in-out infinite;
+}
+
+
+/* Accessory Pages (Content Layout) */
+.page-container {
+  max-width: 1100px;
+  margin: 110px auto 50px auto;
+  padding: 2.5rem;
+  border-radius: 16px;
+
+  /* Frosted Glass Background */
+  background: rgba(255, 255, 255, 0.12); /* Adjust 0.12 for more/less background opacity */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  
+  /* Glass Border & Soft Drop Shadow */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.page-container h1 {
+  margin-bottom: 1rem;
+  color: #1a202c;
+}
+
+/* Search Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.close-modal {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+/* SECTION COMMON STYLES */
+.section {
+  padding: 5rem 0;
+  width: 100%;
+  margin: 0;
+}
+.section-inner{
+	max-width:1200px;
+	margin: 0 auto;
+	padding:0 2rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title h2 {
+  font-family: "adobe-caslon-pro", Georgia, serif;
+  font-size: 2.2rem;
+  color: #3b2045;
+  margin-bottom: 0.5rem;
+}
+
+.title-underline {
+  width: 50px;
+  height: 3px;
+  background-color: #3b2045;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* 1. NEWS SECTION STYLES */
+.news-section {
+	width:100%;
+  background-color: #fcfcfd;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.news-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #edf2f7;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-img {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.date-badge {
+  font-size: 0.75rem;
+  color: #8c7198;
+  background-color: #f7f3f9;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.latest-badge {
+  font-size: 0.75rem;
+  color: #ffffff;
+  background-color: #5d426d;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.news-card h3 {
+  font-size: 1.1rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.news-card p {
+  font-size: 0.85rem;
+  color: #718096;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f7fafc;
+  font-size: 0.8rem;
+}
+
+.author {
+  color: #4a5568;
+  font-weight: 600;
+}
+
+.read-more-btn {
+  text-decoration: none;
+  color: #8c7198;
+  background-color: #f7f3f9;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.read-more-btn:hover {
+  background-color: #ebdff2;
+}
+
+.view-all-container {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.view-all-btn {
+  font-size: 0.85rem;
+  color: #4a5568;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+/* 2. ABOUT SECTION STYLES */
+.about-section {
+  width: 100%;
+  padding: 6rem;
+  background: radial-gradient(circle at center, rgba(11, 19, 43, 0.4) 0%, rgba(11, 19, 43, 0.9) 100%), 
+              url('https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=2000&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.about-glass-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.about-text h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  color: #e2e8f0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-publications {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 2rem;
+  color: #2d3748;
+}
+
+.about-publications h3 {
+  font-size: 1.2rem;
+  color: #3b2045;
+  margin-bottom: 1.5rem;
+}
+
+.publications-list, .people-list {
+	display:flex;
+	flex-direction: column;
+	gap:1rem;
+}
+
+.pub-card, .person-card {
+  display: flex;
+  gap: 1.25rem;
+  background: transparent;  /* Removed background container fill */
+  border: none;             /* Removed card border */
+  border-left: 2px solid rgba(255, 255, 255, 0.25); /* Subtle accent line on left */
+  padding: 0.5rem 0 0.5rem 1rem; /* Compact padding */
+  box-shadow: none;         /* Removed box shadow */
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.pub-links,
+.person-contact {
+  display: flex; /*[cite: 5] */
+  align-items: center; /*[cite: 5] */
+  gap: 0.75rem;
+}
+
+
+
+.year-badge {
+  background-color: #bfa1c9;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin-top: 2px;
+}
+
+.pub-info h4 {
+  font-size: 0.85rem;
+  color: #2d3748;
+  line-height: 1.3;
+}
+
+.pub-info .journal {
+  font-size: 0.75rem;
+  color: #718096;
+}
+
+/* 3. GALLERY SECTION STYLES */
+.gallery-section {
+	width:95%;
+  background-color: #ffffff;
+}
+
+/* Dynamic Masonry Layout for Mixed Portrait/Landscape Images */
+.gallery-grid {
+  column-count: 3;        /* 3 columns on desktop */
+  column-gap: 1.25rem;    /* Horizontal gap between columns */
+  width: 100%;
+}
+
+.gallery-item {
+  break-inside: avoid;    /* Prevents images from breaking across column breaks */
+  margin-bottom: 1.25rem; /* Vertical gap between stacked images */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #edf2f7;
+  background-color: #f7fafc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;           /* Allows images to preserve natural aspect ratio */
+  display: block;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.02);
+}
+
+.gallery-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #cbd5e0;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #8c7198;
+}
+
+/* RESPONSIVE LAYOUT ADJUSTMENTS */
+@media (max-width: 900px) {
+  .gallery-grid {
+    column-count: 2;
+  }
+}
+ @media(max-width: 550px){ 
+  .gallery-grid {
+    column-count: 1;
+  }
+}
+
+
+
+/* PUBLICATIONS */
+
+/* Page Header Typography for Dark Background */
+.page-header {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 1.5rem;
+}
+
+.page-header h1 {
+  font-family: "adobe-caslon-pro", Georgia, serif;
+  font-size: 2.5rem;
+  color: #ffffff; /* Bright white title */
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.page-header p {
+  color: #e2e8f0; /* Soft off-white subtitle */
+  font-size: 1.05rem;
+}
+
+/* Centered Year Division Headers for Dark Background */
+.year-heading, .role-heading {
+  font-family: "adobe-caslon-pro", Georgia, serif;
+  font-size: 1.3rem;
+  color: #ffffff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  padding-bottom: 0.3rem;
+  margin: 0 auto 1.5rem auto;
+  display: table;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+
+.pub-card:hover, 
+.person-card:hover {
+  transform: translateX(4px);
+  background: transparent;
+  border-left-color: #d6bcfa;
+}
+
+/* Image Thumbnail Border for Contrast */
+.pub-image, .person-image {
+  flex-shrink: 0;
+  width: 120px;
+  height: 90px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.pub-image img,
+.person-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.person-image{
+height:200px;
+width:160px;
+}
+
+.pub-card:hover .pub-image img{
+	transform:scale(1.05);
+}
+.pub-details,
+.person-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+/* Readable Inverted Text Styling */
+.pub-number, .person-role {
+  font-size: 0.72rem; /* Reduced from 0.8rem */
+  font-weight: 700;
+  color: #d6bcfa;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.15rem;
+}
+
+.pub-title, .person-name {
+  font-size: 0.95rem; /* Reduced from 1.1rem */
+  color: #ffffff;
+  line-height: 1.25;
+  margin-bottom: 0.25rem;
+  font-weight: 400;
+}
+
+.pub-authors, .person-bio {
+  font-size: 0.78rem; /* Reduced from 0.88rem */
+  color: #e2e8f0;
+  line-height: 1.3;
+  margin-bottom: 0.25rem;
+}
+
+.pub-authors strong, .person-interests strong {
+  color: #ffffff; /* Highlight primary author in solid white */
+}
+
+.pub-journal, .person-interests {
+  font-size: 0.75rem; /* Reduced from 0.85rem */
+  color: #cbd5e0;
+  margin-bottom: 0.4rem;
+}
+.year-division, .role-division{
+	margin-bottom:1.9rem;
+}
+/* Link and Badge Styling for Dark Theme */
+.doi-link, .contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem; /* Reduced from 0.82rem */
+  font-weight: 500;
+  color: #ffffff;
+  background-color: rgba(140, 113, 152, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.doi-link:hover, .contact-link:hover {
+  background-color: rgba(140, 113, 152, 0.9);
+  color: #ffffff;
+}
+
+.status-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+

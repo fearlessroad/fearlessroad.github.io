@@ -1,116 +1,445 @@
-<!DOCTYPE html>
-<html>
+ <!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications - Computational Aerobiology Lab</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-<!-- TOP NAVIGATION AND SIDEBAR-->
-        <div class="topnav" id="myTopnav">
-          <a href="index.html" class="active">Home</a>
-          <!--<a href="about.html">About</a>-->
-          <a href="research.html">Research</a>
-          <a href="publications.html">Publications</a>
-          <a href="artwork.html">Artwork</a>
-          <a href="resume.html">CV</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-          </a>
+<body class="publications-page">
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><i class="fa-solid fa-microscope logo-icon"></i><span>CABLab</span></a>
+      <nav class="nav-links">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="publications.html"><i class="fa-solid fa-graduation-cap"></i> Research</a>
+        <a href="publications.html" class="active"><i class="fa-solid fa-newspaper"></i> Publications</a>
+        <a href="index.html"><i class="fa-solid fa-bullhorn"></i> Announcements</a>
+        <a href="people.html"><i class="fa-solid fa-address-book"></i> People</a>
+        <a href="index.html"><i class="fa-regular fa-image"></i> Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <div class="page-header">
+      <h1>Lab Publications</h1>
+      <p>Explore our research papers spanning fundamental interface science to modeling whole viruses to large-scale bioaerosol simulations.</p>
     </div>
 
-    <div style="padding-left:16px" class='container'>
-          <div class='sidebar'>
-                <div class='sidebar-text'>
-                      <img class="headshot" src="assets/hs1.png" alt='Headshot'>
-                </div>
-                <div class='sidebar-text'>
-                    <h2>Abigail Dommer, PhD</h2>
-                    <p>Computational Chemist<br>Postdoctoral Scholar<br>Laboratory of Dr. Siewert Marrink<br>University of Groningen<br>acdommer@gmail.com</p>
-                </div>
-                <div>
-                    <canvas id='sars'>
-                          <script type="text/javascript" src="js/scroll.js"></script>
-                    </canvas>
-                </div>
+    <!-- 2026 -->
+    <section class="year-division">
+      <h2 class="year-heading">2026</h2>
+      <div class="publications-list">
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub22.jpg" alt="Publication 22 Thumbnail">
           </div>
-<!-- start content here-->
-<div class='content'>
-    <h1>Publications</h1>
-    <p>Publications to date: 17</p>
-        <p>Last Updated: August 30, 2024</p>
-    <p>†Shared Authorship</p>
-    <div class='news-header'><h2>2024</h2><hr></div>
-    <div>
-        <em>Interfacial Enrichment of Lauric Acid Assisted by Long-Chain Fatty Acids, Acidity, and Salinity at Sea Spray Aerosol Surfaces</em>
-        <p><b>Dommer, A. C.</b>† and Rogers, M. M.†,  Carter-Fenk, K. A.; Wauer, N. A.; Rubio, P. B.; Davasam, A.; Allen, H. C.; and Amaro, R. E. <em>The Journal of Physical Chemistry A</em>. 2024, 128, 34, 7195-7207. DOI: 10.1021/acs.jpca.4c03335. <a href="https://pubs.acs.org/doi/10.1021/acs.jpca.4c03335" target="_blank" rel="noopener noreferrer">View Online&#10132;</a> </p><br style='clear:both'>
-    </div>
-    <div class='news-header'><h2>2023</h2><hr></div>
-    <div>
-        <em>Revealing the Impacts of Chemical Complexity on Submicrometer Sea Spray Aerosol Morphology.</em>
-        <p><b>Dommer, A. C.</b>; Wauer, N. A.; Angle, K. J.; Davasam, A.; Rubio, P. B.; Luo, M.; Morris, C. K.; Prather, K. A.; Grassian, V. H.; Amaro, R. E. <em>ACS Central Science</em>. 2023. DOI: 10.1021/acscentsci.3c00184. <a href="https://pubs.acs.org/doi/full/10.1021/acscentsci.3c00184" target="_blank" rel="noopener noreferrer">View Online&#10132;</a> </p><br style='clear:both'>
-    </div>
-    <div>
-        <em>#COVIDisAirborne: AI-Enabled Multiscale Computational Microscopy of Delta SARS-CoV-2 in a Respiratory Aerosol.</em>
-        <p><b>Dommer, A.</b>, † Casalino, L.,† and Kearns, F. †; Rosenfeld, M.; Wauer, N.; Ahn, S-H.; Russo, J.; Oliveira, S.; Morris, C.; Bogetti, A.; Trifan, A.;  Brace, A.; Sztain, T.; Clyde, A.; Ma, H.; Chennubhotla, C.; Lee, H.; Turilli, M.; Khalid, S.; Tamayo-Mendoza, T.; Welborn, M.; Christensen, A.; Smith, D.; Qiao, Z.; Sirumalla, S.; O’Connor, M.; Manby, F.; Anandkumar, A.; Hardy, D.; Phillips, J.; Stern, A.; Romero, J.; Clark, D.; Dorrell, M.; Maiden, T.; Huang, L.; McCalpin, J.; Woods, C.; Williams, M.; Barker, B.; Rajapaksha, H.; Pitts, R.; Gibbs, T.; Stone, J.; Zuckerman, D.; Mulholland, A.; Miller, T.; Jha, S.; Ramanathan, A.; Chong, L.; Amaro, R. <em>Int. J. High Perform. Comput. Appl.</em> 2023. 37, 1, 28-44. DOI: 10.1177/10943420221128233. <a href="https://journals.sagepub.com/doi/full/10.1177/10943420221128233" target="_blank" rel="noopener noreferrer">View Online&#10132;</a></p><br style="clear:both">
-    </div>
-    <div class='news-header'><h2>2022</h2><hr></div>
-        <em>Amino Acids are Driven to the Interface by Salts and Acidic Environments.</em>
-        <p>Angle, K. A.; Nowak, C. M.; Davasam, A.; <b>Dommer, A.C.</b>; Wauer, N. A.; Amaro, R. E.; Grassian, V. H. <em>J. Phys. Chem. Lett.</em> 2022, 13, 12, 2824-2829. DOI: 10.1021/acs.jpclett.2c00321. <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.2c00231" target="_blank" rel="noopener noreferrer">View Online&#10132;</a></p><br style="clear:both">
-    <div class='news-header'><h2>2021</h2><hr></div>
-        <em>Calcium bridging drives polysaccharide co-adsorption to a proxy sea surface microlayer.</em>
-        <p>Carter-Fenk, K. A.; <b>Dommer, A. C.</b>; Fiamingo, M. E.; Kim, J. J.; Amaro, R. E.; Allen, H. C. <em>Phys. Chem. Chem. Phys</em>. 2021, 23, 16401-16416. DOI: 10.1039/D1CP01407B. <a href='https://pubs.rsc.org/en/content/articlelanding/2021/cp/d1cp01407b' target="_blank" rel="noopener noreferrer">View Online&#10132;</a></p><br style="clear:both">
-        <em>Cation-driven lipopolysaccharide morphological changes impact nitric acid heterogeneous reactivity in sea spray aerosols.</em>
-        <p>Lee, C. † and <b>Dommer, A. C.</b> †; Schiffer, J. M., Amaro, R. E., Grassian, V. H., Prather, K. A.  <em>J. Phys. Chem. Lett.</em> 2021, 12, 20, 5023-5029. DOI: 10.1021/acs.jpclett.1c00810.</p><br style="clear:both">
-        <em>AI-Driven Multiscale Simulations Illuminate Mechanisms of SARS-CoV-2 Spike Dynamics.</em>
-        <p>Casalino, L. †, <b>Dommer, A. C.</b> †, and Gaieb, Z. †; Barros, E. P.; Sztain, T.; Ahn, S.; Trifan, A.; Brace, A.; Ma, H.; Lee, H.; Bogetti, A.; Khalid, S.; Chong, L.; Simmerling, C.; Hardy, D. J.; Maia, J. D.; Phillips, J. C.; Kurth, T.; Stern, A.; Huang, L.; McCalpin, J.; Tatineni, M.; Gibbs, T.; Stone, J. E.; Jha, S.; Ramanathan, A.; Amaro, R. E. <em>Int. J. High Perform. Comput. Appl.</em> 2021. DOI:10.117/10943420211006452. (Winner: 2020 ACM Gordon Bell Special Prize) <a href='https://journals.sagepub.com/doi/epub/10.1177/10943420211006452' target="_blank" rel="noopener noreferrer">View Online&#10132;</a></p><br style='clear:both'>
-    <div class='news-header'><h2>2020</h2><hr></div>
-        <em>A Multiscale Coarse-grained Model of the SARS-CoV-2 Virion.</em>
-        <p>Yu, A.; Pak, A. J.; He, P; Monje-Galvan, V.; Casalino, L.; Gaieb, Z.; <b>Dommer, A. C.</b>; Amaro, R. E.; Voth, G. A.  <em>Biophys. J.</em> 2020, 120, 6, 1097-1104. DOI:  10.1016/j.bpj.2020.10.048. <a href='https://www.sciencedirect.com/science/article/pii/S0006349520331684' target="_blank" rel="noopener noreferrer">View Online&#10132;</a></p><br style="clear:both">
-        <em>The flexibility of ACE2 in the context of SARS-CoV-2 Infection.</em>
-        <p>Barros, E. P.; Casalino, L.; Gaieb, Z.; <b>Dommer, A. C.</b>; Wang, Y.; Fallon, L.; Raguette, L.; Belfon, K.; Simmerling, C.; Amaro, R. E.  <em>Biophys. J.</em> 2020, 120, 6, 1072-1084. DOI: 10.1016/j.bpj.2020.10.036. <a href='https://www.sciencedirect.com/science/article/pii/S0006349520308626' target="_blank" rel="noopener noreferrer">View Online&#10132;</a></p><br style='clear:both'>
-        <em>Beyond Shielding: The Roles of Glycans in SARS-CoV-2 Spike Protein.</em>
-        <p>Casalino, L. † and Gaieb, Z. †; Goldsmith, J. A.; Hjorth, C.; <b>Dommer, A. C.</b>; Harbison, A. M.; Fogarty, C. A.; Barros, E. P.; Taylor, B.C.; McLellan, J. S.; Fadda, E.; Amaro, R. E.  <em>ACS Cent. Sci.</em> 2020, 6, 10, 1722-1734. DOI: 10.1021/acscentsci.0c01056. <a href='https://pubs.acs.org/doi/10.1021/acscentsci.0c01056' target="_blank" rel="noopener noreferrer">View Online&#10132;</a></p><br style='clear:both'>
-        <em>Insights into the Behavior of Nonanoic Acid and Its Conjugate Base at the Air/Water Interface Through a Combined Experimental and Theoretical Approach.</em><p>Luo, M.; Wauer, N. A.; Angle, K. J.; <b>Dommer, A. C</b>; Song, M.; Novak, C. M.; Amaro, R. E.; Grassian, V. H.  <em>Chem. Sci.</em> 2020, 11, 10647-10656. DOI: 10.1039/D0SC02354J.</p><br style='clear:both'>
-        <em>Mesoscale All-Atom Influenza Virus Simulations Suggest New Substrate Binding Mechanism.</em> <p>Durrant, J.† and Kochanek, S.†; Casalino, L.; Ieong, P.; <b>Dommer, A.</b>; Amaro, R. E. <em>ACS Cent. Sci.</em> 2020, 6, 2, 189-196. DOI: 10.1021/acscentsci.9b01071.</p><br style='clear:both'>
-    <div class='news-header'><h2>2019</h2><hr></div>
-        <em>Surfactant Charge Modulates Lipase-Embedded Monolayer Stability at Marine-Relevant Aerosol Surfaces.</em>
-        <p>Luo, M.† and <b>Dommer, A. C.†</b>; Schiffer, J. M.; Rez, D. J.; Mitchell, A. R.; Amaro, R. E.; Grassian, V. H.  <em>Langmuir.</em> 2019, 35 (27), 9050-9060. DOI: 10.1021/acs.langmuir.9b00689.</p><br style='clear:both'>
-    <div class='news-header'><h2>2018</h2><hr></div>
-            <em>Computational Assay that Explores the Hemagglutinin/Neuraminidase Functional Balance Reveals the Neuraminidase Secondary Site as a Novel Anti-Influenza Target.</em><p>Amaro, R. E.; Ieong, P.; Huber, G., <b>Dommer, A.</b>; Alasdair, S.; Bush, R.; Durrant, J.; Votapka, L. A. <em>ACS Cent. Sci.</em> 2018, 4 (11), 1570-1577.  DOI: 10.1021/acscentsci.8b00666.</p><br style="clear:both">
-            <em>Impacts of Lipase Enzyme on the Surface Properties of Marine Aerosols.</em><p>Schiffer, J. M.; Luo, M.; <b>Dommer, A. C.</b>; Thoron, G.; Pendergraft, M.; Santander, M. V.; Lucero, D.; De Barros, E. P.; Prather, K. A.; Grassian, V. H., Amaro, R. E.  <em>J. Phys. Chem. Lett.</em> 2018, 9, 14, 3839-3849. DOI: 10.1021/acs.jpclett.8b01363.</p><br style="clear:both">
-    <div class='news-header'><h2>2016</h2><hr></div>
-        <em>A Miniature Marine Aerosol Reference Tank (MiniMART) as a Compact Breaking Wave Analogue</em><p>Stokes, M. D.; Deane, G.; Collins, D. B.; Cappa, C.; Bertram, T.; <b>Dommer, A.</b>; Schill, S.; Forestieri, S.; Survilo, M. <em>Atmos. Meas. Tech.</em> 2016, 9 (9), 4257-4267. DOI: 10.5194/amt-2016-149.</p><br style="clear:both">
-        <em>Sea Spray Aerosol Structure and Composition Using Cryogenic Transmission Electron Microscopy</em><p>Patterson, J. P.; Collins, D. B.; Michaud, J. M.; Axson, J. L.; Sultana, C. M., Moser, T.; <b>Dommer, A. C.</b>; Conner, J.; Grassian, V. H.; Stokes, M. D.; Deane, G. B.; Evans, J. E.; Burkart, M. D.; Prather, K. A.; Gianneschi, N. C. <em>ACS Cent. Sci.</em> 2016. 2 (1), 40-47. DOI: 10.1021/acscentsci.5b0034.</p><br style="clear:both">
-</div>
+          <div class="pub-details">
+            <span class="pub-number">#22</span>
+            <h3 class="pub-title">Condensate-Like Dynamics in Respiratory Aerosols Shape the Behavior of an Airborne Virus</h3>
+            <p class="pub-authors">Wauer, NA†; Calvó-Tusell, C†; <strong>Dommer, AC</strong>; Casalino, L; Kearns, FL; Caparotta, M; Rosenfeld, MA; Morris, CK; Amaro, RE.*</p>
+            <p class="pub-journal"><em>Under Review</em> (2026)</p>
+            <div class="pub-links">
+              <span class="pub-badge status-badge">Under Review</span>
+            </div>
+          </div>
+        </article>
 
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub21.jpg" alt="Publication 21 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#21</span>
+            <h3 class="pub-title">Enzymes at the Ocean-Atmosphere Boundary: Lipase Modulation of Lipid Packing and Water Loss in Sea Spray Aerosols</h3>
+            <p class="pub-authors">Rubio, PB†; Davasam, A†; Wauer, NA†; <strong>Dommer, AC.</strong>; Man, L; Grassian, V; Amaro, RE.*</p>
+            <p class="pub-journal"><em>ACS Earth Space Chem.</em> (2026)</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1021/acsearthspacechem.6c00108" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1021/acsearthspacechem.6c00108</a>
+            </div>
+          </div>
+        </article>
 
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub20.jpg" alt="Publication 20 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#20</span>
+            <h3 class="pub-title">Compartment-Guided Assembly of Large-Scale Molecular Models with Bentopy</h3>
+            <p class="pub-authors">Westendorp, MSS†; Stevens, JA†; Brown, CM; <strong>Dommer, AC</strong>; Wassenaar, TA; Bruininks, BMH; Marrink, SJ.*</p>
+            <p class="pub-journal"><em>Protein Science</em> (2026)</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1002/pro.70480" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1002/pro.70480</a>
+            </div>
+          </div>
+        </article>
 
-<!-- END CONTAINER DIV -->
-</div>
-<!-- SCRIPT FOR SARS -->
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+      </div>
+    </section>
 
-<!-- FOOTER -->
-<div class='footer'>
-      <ul><h2>
-            <li><a class='footer-text'>Follow:</a></li>
-            <li><a href='https://www.instagram.com/abbydommer'><img src='assets/instagram.png'>Instagram</a></li>
-            <li><a href='https://twitter.com/abbydommer'><img src='assets/twitter.png'>Twitter</a></li>
-            <li><a href='https://www.linkedin.com/in/abigail-dommer/'><img src='assets/linkedin.png'>LinkedIn</a></li>
-            <li><a href='https://github.com/fearlessroad'><img src='assets/github.png'>Github</a></li>
-      </h2></ul>
-      <p>&#169; Abigail C Dommer 2023</p>
-</div>
+    <!-- 2025 -->
+    <section class="year-division">
+      <h2 class="year-heading">2025</h2>
+      <div class="publications-list">
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub19.jpg" alt="Publication 19 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#19</span>
+            <h3 class="pub-title">Understanding Aerosol-Mediated Disease Transmission</h3>
+            <p class="pub-authors"><strong>Dommer, AC</strong>; Amaro, RE;* Prather, KA.*</p>
+            <p class="pub-journal"><em>ACS Cent. Sci.</em> 2025, 11, 12, 2319-2328</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1021/acscentsci.5c00364" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1021/acscentsci.5c00364</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub18.jpg" alt="Publication 18 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#18</span>
+            <h3 class="pub-title">All-Atom Virus Simulations to Tackle Airborne Disease</h3>
+            <p class="pub-authors"><strong>Dommer, AC</strong>; Wauer, NA; Marrink, SJ;* Amaro, RE.*</p>
+            <p class="pub-journal"><em>Curr. Opin. Struct. Biol.</em> 2025, 92, 103048</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1016/j.sbi.2025.103048" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1016/j.sbi.2025.103048</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 2024 -->
+    <section class="year-division">
+      <h2 class="year-heading">2024</h2>
+      <div class="publications-list">
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub17.jpg" alt="Publication 17 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#17</span>
+            <h3 class="pub-title">Interfacial Enrichment of Lauric Acid Assisted by Long Chain Fatty Acids, Acidity, and Salinity at Sea Spray Aerosol Surfaces</h3>
+            <p class="pub-authors"><strong>Dommer, AC†</strong> and Rogers, M;† Carter-Fenk, KA; Wauer, NA; Davasam, A; Rubio, PB; Allen, HC;* Amaro, RE.*</p>
+            <p class="pub-journal"><em>J. Phys. Chem. A.</em> 2024, 128, 34, 7195-7207</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1021/acs.jpca.4c03335" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1021/acs.jpca.4c03335</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 2023 -->
+    <section class="year-division">
+      <h2 class="year-heading">2023</h2>
+      <div class="publications-list">
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub16.jpg" alt="Publication 16 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#16</span>
+            <h3 class="pub-title">Revealing the Impacts of Chemical Complexity on Submicron Sea Spray Aerosol Morphology</h3>
+            <p class="pub-authors"><strong>Dommer, AC</strong>; Wauer, NA; Angle, KJ; Davasam, A; Rubio, PB; Luo, M; Morris, CK; Prather, KA; Grassian, VH;* Amaro, RE.*</p>
+            <p class="pub-journal"><em>ACS Cent. Sci.</em> 2023, 9, 6, 1088-1103</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1021/acscentsci.3c00184" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1021/acscentsci.3c00184</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub15.png" alt="Publication 15 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#15</span>
+            <h3 class="pub-title">#COVIDisAirborne: AI-Enabled Multiscale Computational Microscopy of Delta SARS-CoV-2 in a Respiratory Aerosol</h3>
+            <p class="pub-authors"><strong>Dommer, AC†</strong>, Casalino, L,† and Kearns, FL†; Rosenfeld, MA; Wauer, NA; Ahn, S-H; Russo, J; Oliveira, S; Morris, C; Bogetti, A; Trifan, A; Brace, A; Sztain, T; Clyde, A; Ma, H; Chennubhotla, C; Lee, H; Turilli, M; Khalid, S; Tamayo-Mendoza, T; Welborn, M; Christensen, A; Smith, D; Qiao, Z; Sirumalla, S; O’Connor, M; Manby, F; Anandkumar, A; Hardy, D; Phillips, J; Stern, A; Romero, J; Clark, D; Dorrell, M; Maiden, T; Huang, L; McCalpin, J; Woods, C; Williams, M; Barker, B; Rajapaksha, H; Pitts, R; Gibbs, T; Stone, J; Zuckerman, D; Mulholland, A; Miller, T; Jha, S; Ramanathan, A;* Chong, L;* Amaro, R.*</p>
+            <p class="pub-journal"><em>Int. J. High Perform. Comput. Appl.</em> 2023, 37, 1, 28-44</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1177/10943420221128233" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1177/10943420221128233</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 2022 -->
+    <section class="year-division">
+      <h2 class="year-heading">2022</h2>
+      <div class="publications-list">
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub14.jpg" alt="Publication 14 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#14</span>
+            <h3 class="pub-title">Amino Acids are Driven to the Interface by Salts and Acidic Environments</h3>
+            <p class="pub-authors">Angle, KA; Nowak, CM; Davasam, A; <strong>Dommer, AC</strong>; Wauer, NA; Amaro, RE;* Grassian, VH.*</p>
+            <p class="pub-journal"><em>J. Phys. Chem. Lett.</em> 2022, 13, 12, 2824-2829</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1021/acs.jpclett.2c00321" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1021/acs.jpclett.2c00321</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 2021 -->
+    <section class="year-division">
+      <h2 class="year-heading">2021</h2>
+      <div class="publications-list">
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub13.jpg" alt="Publication 13 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#13</span>
+            <h3 class="pub-title">Calcium bridging drives polysaccharide co-adsorption to a proxy sea surface microlayer</h3>
+            <p class="pub-authors">Carter-Fenk, KA; <strong>Dommer, AC</strong>; Fiamingo, ME; Kim, JJ; Amaro, RE;* Allen, HC.*</p>
+            <p class="pub-journal"><em>Phys. Chem. Chem. Phys.</em> 2021, 23, 16401-16416</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1039/D1CP01407B" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1039/D1CP01407B</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub12.jpg" alt="Publication 12 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#12</span>
+            <h3 class="pub-title">Cation-driven lipopolysaccharide morphological changes impact nitric acid heterogeneous reactivity in sea spray aerosols</h3>
+            <p class="pub-authors"><strong>Dommer, AC†</strong> and Lee, C†; Schiffer, JM; Amaro, RE;* Grassian, VH;* Prather, KA.*</p>
+            <p class="pub-journal"><em>J. Phys. Chem. Lett.</em> 2021, 12, 20, 5023-5029</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1021/acs.jpclett.1c00810" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1021/acs.jpclett.1c00810</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub11.jpg" alt="Publication 11 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#11</span>
+            <h3 class="pub-title">AI-Driven Multiscale Simulations Illuminate Mechanisms of SARS-CoV-2 Spike Dynamics</h3>
+            <p class="pub-authors"><strong>Dommer, AC†</strong>, Casalino, L†, and Gaieb, Z†; Barros, EP; Sztain, T; Ahn, S; Trifan, A; Brace, A; Ma, H; Lee, H; Bogetti, A; Khalid, S; Chong, L; Simmerling, C; Hardy, DJ; Maia, JD; Phillips, JC; Kurth, T; Stern, A; Huang, L; McCalpin, J; Tatineni, M; Gibbs, T; Stone, JE; Jha, S; Ramanathan, A;* Amaro, RE.*</p>
+            <p class="pub-journal"><em>Int. J. High Perform. Comput. Appl.</em> 2021, 35 (5)</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1177/10943420211006452" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1177/10943420211006452</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 2020 -->
+    <section class="year-division">
+      <h2 class="year-heading">2020</h2>
+      <div class="publications-list">
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub10.jpg" alt="Publication 10 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#10</span>
+            <h3 class="pub-title">A Multiscale Coarse-grained Model of the SARS-CoV-2 Virion</h3>
+            <p class="pub-authors">Yu, A; Pak, AJ; He, P; Monje-Galvan, V; Casalino, L; Gaieb, Z; <strong>Dommer, AC</strong>; Amaro, RE; Voth, GA.*</p>
+            <p class="pub-journal"><em>Biophys. J.</em> 2020, 120, 6, 1097-1104</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1016/j.bpj.2020.10.048" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1016/j.bpj.2020.10.048</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub9.jpg" alt="Publication 9 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#9</span>
+            <h3 class="pub-title">The flexibility of ACE2 in the context of SARS-CoV-2 Infection</h3>
+            <p class="pub-authors">Barros, EP; Casalino, L; Gaieb, Z; <strong>Dommer, AC</strong>; Wang, Y; Fallon, L; Raguette, L; Belfon, K; Simmerling, C; Amaro, RE.*</p>
+            <p class="pub-journal"><em>Biophys. J.</em> 2020, 120, 6, 1072-1084</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1016/j.bpj.2020.10.036" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1016/j.bpj.2020.10.036</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub8.jpg" alt="Publication 8 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#8</span>
+            <h3 class="pub-title">Beyond Shielding: The Roles of Glycans in SARS-CoV-2 Spike Protein</h3>
+            <p class="pub-authors">Casalino, L† and Gaieb, Z†; Goldsmith, JA; Hjorth, C; <strong>Dommer, AC</strong>; Harbison, AM; Fogarty, CA; Barros, EP; Taylor, BC; McLellan, JS; Fadda, E; Amaro, RE.*</p>
+            <p class="pub-journal"><em>ACS Cent. Sci.</em> 2020, 6, 10, 1722-1734</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1021/acscentsci.0c01056" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1021/acscentsci.0c01056</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub7.jpg" alt="Publication 7 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#7</span>
+            <h3 class="pub-title">Insights into the Behavior of Nonanoic Acid and Its Conjugate Base at the Air/Water Interface Through a Combined Experimental and Theoretical Approach</h3>
+            <p class="pub-authors">Luo, M; Wauer, NA; Angle, KJ; <strong>Dommer, AC</strong>; Song, M; Novak, CM; Amaro, RE; Grassian, VH.*</p>
+            <p class="pub-journal"><em>Chem. Sci.</em> 2020, 11, 10647-10656</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1039/D0SC02354J" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1039/D0SC02354J</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub6.jpeg" alt="Publication 6 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#6</span>
+            <h3 class="pub-title">Mesoscale All-Atom Influenza Virus Simulations Suggest New Substrate Binding Mechanism</h3>
+            <p class="pub-authors">Durrant, J† and Kochanek, S†; Casalino, L; Ieong, P; <strong>Dommer, AC</strong>; Amaro, RE.*</p>
+            <p class="pub-journal"><em>ACS Cent. Sci.</em> 2020, 6, 2, 189-196</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1021/acscentsci.9b01071" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1021/acscentsci.9b01071</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 2019 -->
+    <section class="year-division">
+      <h2 class="year-heading">2019</h2>
+      <div class="publications-list">
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub5.jpg" alt="Publication 5 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#5</span>
+            <h3 class="pub-title">Surfactant Charge Modulates Lipase-Embedded Monolayer Stability at Marine-Relevant Aerosol Surfaces</h3>
+            <p class="pub-authors"><strong>Dommer, AC†</strong> and Luo, M†; Schiffer, JM; Rez, DJ; Mitchell, AR; Amaro, RE;* Grassian, VH.*</p>
+            <p class="pub-journal"><em>Langmuir</em> 2019, 35 (27), 9050-9060</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1021/acs.langmuir.9b00689" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1021/acs.langmuir.9b00689</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 2018 -->
+    <section class="year-division">
+      <h2 class="year-heading">2018</h2>
+      <div class="publications-list">
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub4.jpg" alt="Publication 4 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#4</span>
+            <h3 class="pub-title">Computational Assay that Explores the Hemagglutinin/Neuraminidase Functional Balance Reveals the Neuraminidase Secondary Site as a Novel Anti-Influenza Target</h3>
+            <p class="pub-authors">Amaro, RE; Ieong, P; Huber, G; <strong>Dommer, AC</strong>; Alasdair, S; Bush, R; Durrant, J; Votapka, LA.*</p>
+            <p class="pub-journal"><em>ACS Cent. Sci.</em> 2018, 4 (11), 1570-1577</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1021/acscentsci.8b00666" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1021/acscentsci.8b00666</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub3.png" alt="Publication 3 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#3</span>
+            <h3 class="pub-title">Impacts of Lipase Enzyme on the Surface Properties of Marine Aerosols</h3>
+            <p class="pub-authors">Schiffer, JM; Luo, M; <strong>Dommer, A. C</strong>; Thoron, G; Pendergraft, M; Santander, MV; Lucero, D; De Barros, EP; Prather, KA; Grassian, VH; Amaro, RE.*</p>
+            <p class="pub-journal"><em>J. Phys. Chem. Lett.</em> 2018, 9, 14, 3839-3849</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1021/acs.jpclett.8b01363" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1021/acs.jpclett.8b01363</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 2016 -->
+    <section class="year-division">
+      <h2 class="year-heading">2016</h2>
+      <div class="publications-list">
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub2.png" alt="Publication 2 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#2</span>
+            <h3 class="pub-title">A Miniature Marine Aerosol Reference Tank (MiniMART) as a Compact Breaking Wave Analogue</h3>
+            <p class="pub-authors">Stokes, MD; Deane, G; Collins, DB; Cappa, C; Bertram, T; <strong>Dommer, AC</strong>; Schill, S; Forestieri, S; Survilo, M.*</p>
+            <p class="pub-journal"><em>Atmos. Meas. Tech.</em> 2016, 9 (9), 4257-4267</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.5194/amt-9-4257-2016" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.5194/amt-9-4257-2016</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-image">
+            <img src="assets/pubs/pub1.png" alt="Publication 1 Thumbnail">
+          </div>
+          <div class="pub-details">
+            <span class="pub-number">#1</span>
+            <h3 class="pub-title">Sea Spray Aerosol Structure and Composition Using Cryogenic Transmission Electron Microscopy</h3>
+            <p class="pub-authors">Patterson, JP; Collins, DB; Michaud, JM; Axson, JL; Sultana, CM; Moser, T; <strong>Dommer, AC</strong>; Conner, J; Grassian, VH; Stokes, MD; Deane, GB; Evans, JE; Burkart, MD; Prather, KA; Gianneschi, NC.*</p>
+            <p class="pub-journal"><em>ACS Cent. Sci.</em> 2016, 2 (1), 40-47</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1021/acscentsci.5b0034" target="_blank" rel="noopener" class="doi-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1021/acscentsci.5b0034</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
 </body>
 </html>
