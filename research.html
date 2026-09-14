@@ -1,81 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications - Computational Aerobiology Lab</title>
+    <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-<!-- TOP NAVIGATION AND SIDEBAR-->
-        <div class="topnav" id="myTopnav">
-          <a href="index.html" class="active">Home</a>
-          <!--<a href="about.html">About</a>-->
-          <a href="research.html">Research</a>
-          <a href="publications.html">Publications</a>
-          <a href="artwork.html">Artwork</a>
-          <a href="resume.html">CV</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-          </a>
+<body class="publications-page">
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><i class="fa-solid fa-microscope logo-icon"></i><span>CABLab</span></a>
+      
+      <button class="hamburger-toggle" id="menu-toggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="research.html"><i class="fa-solid fa-graduation-cap"></i> Research</a>
+        <a href="publications.html" class="active"><i class="fa-solid fa-newspaper"></i> Publications</a>
+        <a href="index.html#announcements"><i class="fa-solid fa-bullhorn"></i> Announcements</a>
+        <a href="people.html"><i class="fa-solid fa-address-book"></i> People</a>
+        <a href="index.html#gallery"><i class="fa-regular fa-image"></i> Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <div class="page-header">
+      <h1>Research</h1>
+      <p>We aim to develop and simulate molecular models of bioaerosols, biointerfaces, and bioparticles at multiple resolutions to understand how pathogens are stabilized and transferred throughout the environment. Explore some of our projects below!</p>
+      
+      <section class="research-project">
+        <h2>Developing Martini 3 Parameters for Air/Water Interfaces</h2>
+        <p>More information coming soon!</p>
+      </section>
+
+      <section class="research-project">
+        <h2>Revealing the Mechanisms Governing Viral Envelope Structure & Stability</h2>
+        <p>More information coming soon!</p>
+      </section>
+
+      <section class="research-project">
+        <h2>Exploring Effects of Bioaerosol Morphology on Airborne Pathogen Survival</h2>
+        <p>More information coming soon!</p>
+      </section>
+
     </div>
 
-    <div style="padding-left:16px" class='container'>
-          <div class='sidebar'>
-                <div class='sidebar-text'>
-                      <img class="headshot" src="assets/hs1.png" alt='Headshot'>
-                </div>
-                <div class='sidebar-text'>
-                    <h2>Abigail Dommer, PhD</h2>
-                    <p>Computational Chemist<br>Postdoctoral Scholar<br>Laboratory of Dr. Siewert Marrink<br>University of Groningen<br>acdommer@gmail.com</p>
-                </div>
-                <div>
-                    <canvas id='sars'>
-                          <script type="text/javascript" src="js/scroll.js"></script>
-                    </canvas>
-                </div>
-          </div>
-<!-- start content here-->
-          <div class='content'>
-                <h1>Pushing the Limits of High Performance Computing with Computational Microscopy</h1>
-                <div class='research-box'>
-                    <h3>Sea Spray Aerosols & Climate</h3>
-                </div>
+  </main>
 
-                <div class='research-box'>
-                    <h3>Respiratory Disease & Human Health</h3>
-                </div>
-
-          </div>
-
-
-
-
-
-<!-- END CONTAINER DIV -->
-</div>
-<!-- SCRIPT FOR SARS -->
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
-<!-- FOOTER -->
-<div class='footer'>
-      <ul><h2>
-            <li><a class='footer-text'>Follow:</a></li>
-            <li><a href='https://www.instagram.com/abbydommer/'><img src='assets/instagram.png'>Instagram</a></li>
-            <li><a href='https://twitter.com/abbydommer'><img src='assets/twitter.png'>Twitter</a></li>
-            <li><a href='https://www.linkedin.com/in/abigail-dommer/'><img src='assets/linkedin.png'>LinkedIn</a></li>
-            <li><a href='https://github.com/fearlessroad'><img src='assets/github.png'>Github</a></li>
-      </h2></ul>
-      <p>&#169; Abigail C Dommer 2023</p>
-</div>
+  <script src="script.js"></script>
 </body>
 </html>

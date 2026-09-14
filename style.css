@@ -494,6 +494,17 @@ body.people-page {
   color: #2d3748;
 }
 
+.research-project h2{
+  font-family: "helvetica-neue-lt-pro", Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: #d6bcfa;
+  margin-bottom: .3rem;
+  margin-top:2rem;
+  letter-spacing: 0.8px;
+}
+
 /* Gallery Section */
 .gallery-section {
   width: 100%;
